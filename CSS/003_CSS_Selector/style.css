@@ -1,0 +1,15 @@
+p {
+    padding: 10px;
+}
+
+.classSelector {
+    background: cyan;
+}
+
+#idSelector {
+    font-weight: bold;
+}
+
+input[type=text] {
+    width: 400px;
+}

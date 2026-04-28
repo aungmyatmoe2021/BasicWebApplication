@@ -1,0 +1,38 @@
+a {
+    color: blue;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: green;
+}
+
+a:visited {
+    color: brown;
+}
+
+ul li:first-child {
+    font-weight: bold;
+}
+
+ul li:last-child {
+    font-style: italic;
+}
+
+ul li:nth-child(3) {
+    color: red;
+}
+
+ul li:nth-child(2n) {
+    background-color: cyan;
+}
+
+ul#clearElement > li{
+    color: black;
+    background-color: white;
+    font-weight: normal;
+    font-style: normal;
+}

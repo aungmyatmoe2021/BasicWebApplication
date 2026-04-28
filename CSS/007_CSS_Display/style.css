@@ -1,0 +1,29 @@
+div.org, span.org, span.changeDisplay {
+    background: cyan;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 200px;
+    height: 100px;
+}
+
+span.changeDisplay {
+    display: block;
+}
+
+
+div.wrap{
+    display: flex;
+}
+
+div.wrap div {
+    flex-grow: 1;
+    height: 200px;
+    background-color: cyan;
+    margin: 10px;
+    text-align: center;
+    line-height: 200px;
+}
+
+div.wrap div:first-child {
+    flex-grow: 2;
+}

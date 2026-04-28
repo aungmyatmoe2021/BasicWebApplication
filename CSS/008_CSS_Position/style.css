@@ -1,0 +1,80 @@
+body {
+    height: 2000px;
+    background: linear-gradient(45deg,blue,green);
+}
+
+div {
+    width: 300px;
+    height: 200px;
+}
+
+.box1 {
+    top: 100px;
+    left: 100px;
+    position: absolute;
+    background-color: cyan;
+    z-index: 2;
+    opacity: 0.9;
+}
+
+.box2 {
+    top: 150px;
+    left: 150px;
+    position: absolute;
+    background-color: yellow;
+}
+
+.box3 {
+    top: 100px;
+    left: 500px;
+    position: fixed;
+    background-color: cyan;
+}
+
+.box4 {
+    top: 150px;
+    left: 550px;
+    position: fixed;
+    background-color: yellow;
+}
+
+.box5 {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 100px;
+    left: 900px;
+    background-color: cyan;
+}
+
+.box6 {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: yellow;
+}
+
+.box7{
+    top: 0px;
+    position: fixed;
+}
+
+.box8 {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 100px;
+    left: 1400px;
+    background-color: cyan;
+}
+
+.box9 {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: yellow;
+}
