@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pseudo Class</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -40,5 +41,96 @@
         <li>::after</li>
         <li>::placeholder</li>
     </ul>
+
+    <div class="text-center">
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#code">Show Code</a>
+    </div>
+    <div class="collapse mt-3" id="code">
+        <div class="card card-body">
+            <h5 class="card-title"></h5>
+            <p>
+                <h1>HTML</h1>
+<xmp>
+    <a href="#one">Link One</a>
+    <a href="#two">Link Two</a>
+
+    <ul>
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+        <li>Item Five</li>
+    </ul>
+
+    <ul id="clearElement">
+        <li>:hover</li>
+        <li>:active</li>
+        <li>:visited</li>
+        <li>:first-child</li>
+        <li>:last-child</li>
+        <li>:nth-child(3)</li>
+        <li>:nth-child(2n)</li>
+        <li>:empty</li>
+        <li>:not</li>
+        <li>:target</li>
+        <li>:focus</li>
+        <li>:checked</li>
+        <li>:readonly</li>
+        <li>:enabled</li>
+        <li>:disabled</li>
+        <li>:valid</li>
+        <li>:invalid</li>
+        <li>::before</li>
+        <li>::after</li>
+        <li>::placeholder</li>
+    </ul>
+</xmp>
+                <hr>
+                <h1>CSS</h1>
+<pre>
+    @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css");
+
+    a {
+        color: blue;
+    }
+
+    a:hover {
+        color: red;
+    }
+
+    a:active {
+        color: green;
+    }
+
+    a:visited {
+        color: brown;
+    }
+
+    ul li:first-child {
+        font-weight: bold;
+    }
+
+    ul li:last-child {
+        font-style: italic;
+    }
+
+    ul li:nth-child(3) {
+        color: red;
+    }
+
+    ul li:nth-child(2n) {
+        background-color: cyan;
+    }
+
+    ul#clearElement > li{
+        color: black;
+        background-color: white;
+        font-weight: normal;
+        font-style: normal;
+    }
+</pre>
+            </p>
+        </div>
+    </div>
 </body>
 </html>
