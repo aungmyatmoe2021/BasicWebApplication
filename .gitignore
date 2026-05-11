@@ -1,2 +1,4 @@
-./.gitignore
-./theme/node_modules
+.gitignore
+
+# dependencies
+/theme/node_modules
