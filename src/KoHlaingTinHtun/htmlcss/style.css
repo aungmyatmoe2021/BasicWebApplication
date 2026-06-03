@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+}
+
+.sidebar {
+    width: 25%;
+    height: 100%;
+    background-color: #607d8d;
+    position: fixed;
+    overflow: auto;
+    margin: 0 auto;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+}
+
+.sidebar ul li a.active{
+    background-color: #009688;
+}
+
+.sidebar ul li a:hover{
+    background-color: gray;
+    color: black;
+}
+
+.one, .two, .three {
+    margin-left: 25%;
+}
+
+.one {
+    height: auto;
+    padding: 3px 15px;  
+}
+
+.two ul {
+    list-style: none;
+    padding: 0px 15px;
+
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.three {
+    padding: 3px 15px;  
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.three .box {
+    padding: 10px;
+}
+
+.three .box:first-child {
+    background-color: #009688;
+}
+
+.three .box:last-child {
+    background-color: #795548;
+}
+
+.footer {
+    position: fixed;
+    width: 73%;
+    margin-left: 25%;
+    color: white;
+    background-color:cadetblue;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    bottom: 0;
+} 
+
+.position {
+    text-align: left;
+}
+
+.name {
+    text-align: right;
+}
+
+@media screen and (max-width: 900px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .one, .two, .three, .footer {
+        margin-left: 0%;
+    }
+
+    .sidebar ul li a {
+        float: left;
+        padding: 10px;
+    }
+
+    .two ul {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .three {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        position:relative;
+        width: 96%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .one h2 {
+        text-align: center;
+    }
+
+    .sidebar ul li a {
+        text-align: center;
+        float: none;
+    }
+
+    .one, .two ul, .three {
+        margin-left: 0%;
+    }
+
+    .two ul, .three{
+        grid-template-columns: 1fr;
+    }
+}
