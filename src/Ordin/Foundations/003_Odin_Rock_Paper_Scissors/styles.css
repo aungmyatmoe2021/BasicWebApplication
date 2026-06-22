@@ -1,0 +1,29 @@
+* {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.one{
+    width: 50%;
+    background-color: lightgreen;
+    text-align: center;
+}
+
+.humanScore, .computerScore {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.two{
+    width: 50%;
+    background-color: lightpink;
+    text-align: center;
+}
