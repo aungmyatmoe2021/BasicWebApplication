@@ -1,5 +1,6 @@
 <?php
 
-$heading = "Contact Us";
+view(BASE_PATH."contact.view.php",[
+    'heading' => 'Contact Us'
+]);
 
-require("../views/contact.view.php");

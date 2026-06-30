@@ -1,5 +1,8 @@
 <?php
 
+namespace Core;
+use PDO;
+
 class Database{
     public $connection;
     public $statement;
@@ -28,7 +31,7 @@ class Database{
     public function findOrFail(){
         $result = $this->find();
         if(!$result){
-            absort(Response::NOT_FOUND);
+            Router::absort(Response::NOT_FOUND);
         }
         return $result;
     }
